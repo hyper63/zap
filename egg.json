@@ -5,12 +5,18 @@
   "homepage": "https://github.com/hyper63/zap",
   "unstable": true,
   "unlisted": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "releaseType": "patch",
-  "filtes": ["./mod.js", "./deps.js", "./README.md"],
-  "ignore": ["./.git"],
+  "files": [
+    "./mod.js",
+    "./deps.js",
+    "./README.md"
+  ],
+  "ignore": [
+    "./.git"
+  ],
   "checkFormat": "deno fmt",
   "checkTests": "deno test",
   "checkInstallation": true,
-  "check": false
+  "check": true
 }
