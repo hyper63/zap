@@ -1,13 +1,13 @@
 # README
 
-`zap` a react web server framework built on top of opine. This server framework, lets you 
-create APIs using react for the server.
+`zap` a react web server framework built on top of opine. This server framework,
+lets you create APIs using react for the server.
 
-``` js
-import React from 'react'
-import { run, App, Request, Use } from 'zap'
+```js
+import React from "react";
+import { App, Request, run, Use } from "zap";
 
-const Hello = ({req, res}) => (res.json({hello: 'world'}), null)
+const Hello = ({ req, res }) => (res.json({ hello: "world" }), null);
 
 run(
   <App>
@@ -15,13 +15,13 @@ run(
       <Hello />
     </Request>
     <Listen port={3000} />
-  </App>
-)
+  </App>,
+);
 ```
 
 In Deno, create an import_map.json file
 
-``` json
+```json
 {
   "imports": {
     "react": "https://cdn.skypack.dev/react?dts",
@@ -29,8 +29,3 @@ In Deno, create an import_map.json file
   }
 }
 ```
-
-
-
-
-
