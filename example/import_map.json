@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "zap": "../mod.ts"
+  }
+}
